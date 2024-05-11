@@ -1,0 +1,509 @@
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  position: absolute;
+  width: 130px;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* 메뉴바 스타일 */
+nav {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 4.5%;
+  background-color: transparent;
+  color: #000000;
+  padding: 10px;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 30px;
+  font-size: 20px;
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 600;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  caret-color: transparent;
+}
+
+.narrow-link {
+  display: inline-block;
+}
+
+body,
+html {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  position: fixed;
+}
+
+b {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+div {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 네비게이션 */
+#bthome {
+  color: #bbbbbb;
+}
+b {
+  font-size: 20px;
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 600;
+  color: white;
+  padding: 5px;
+}
+b:hover {
+  color: black;
+}
+
+/* Window 1 */
+#window1 {
+  background-image: url('src/sky1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#window1 .logo {
+  display: none;
+}
+
+#intro {
+  position: absolute;
+  top: 50%;
+  height: 240px;
+  margin-top: -230px;
+}
+#intro h1 {
+  letter-spacing: 5px;
+  color: #cf92e6;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 1000;
+  font-size: 72px;
+  text-align: center;
+}
+#intro h2 {
+  color: #cf92e6;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 600;
+  font-size: 65px;
+  text-align: center;
+}
+
+/* window2 */
+#window2 {
+  background-image: url('src/sky2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#window2 h1 {
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  position: absolute;
+}
+
+#window2 .slide-container {
+  width: 504px;
+  height: 648px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  position: absolute;
+  left: 12%;
+  top: 23%;
+}
+
+#window2 .slide-album {
+  position: relative;
+  width: 504px;
+  height: 648px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+#window2 .slide-images {
+  position: relative;
+  display: flex;
+  width: 1012px;
+  height: 648px;
+  transition: transform 0.5s ease-out;
+}
+#window2 .slide-images img {
+  width: 504px;
+  height: auto;
+}
+
+.btn-next,
+.btn-next:active,
+.btn-next:focus {
+  position: absolute;
+  padding: 8px 8px 7px 14px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 22px;
+  border-radius: 100%;
+}
+.btn-prev,
+.btn-prev:active,
+.btn-prev:focus {
+  position: absolute;
+  padding: 8px 14px 7px 8px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 22px;
+  border-radius: 100%;
+}
+.btn-next:hover,
+.btn-prev:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #93cddf;
+  transition: 0.7s ease-out;
+}
+.btn-prev {
+  left: 10px;
+  top: 46%;
+}
+.btn-next {
+  right: 10px;
+  top: 46%;
+}
+
+#window2 #profile {
+  position: absolute;
+  top: 29%;
+  left: 43%;
+}
+
+#window2 #activity {
+  position: absolute;
+  top: 31%;
+  left: 69%;
+}
+
+#window2 h2 {
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+  line-height: 2.5;
+  text-align: left;
+}
+
+#window2 h3 {
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  line-height: 2.5;
+  text-align: left;
+  margin-left: 1.5%;
+  text-decoration: none;
+}
+
+#window2 h4 {
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  line-height: 2;
+  text-align: left;
+  margin-left: 1.5%;
+  text-decoration: none;
+}
+
+#window2 a {
+  text-decoration: none;
+}
+
+/* Window 3 */
+#window3 {
+  background-image: url('src/sky3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#window3 h1 {
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  position: absolute;
+}
+
+#window3 #loves {
+  top: 23%;
+  position: absolute;
+}
+
+#window3 h2 {
+  margin-top: 45px;
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: #fff;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.img1 {
+  position: absolute;
+  top: 15%;
+  left: 17%;
+}
+
+.img2 {
+  position: absolute;
+  top: 45%;
+  left: 17%;
+}
+
+.img3 {
+  position: absolute;
+  top: 70%;
+  left: 17%;
+}
+
+.img4 {
+  position: absolute;
+  top: 15%;
+  left: 67%;
+}
+
+.img5 {
+  position: absolute;
+  top: 41%;
+  left: 67%;
+}
+
+.img6 {
+  position: absolute;
+  top: 67%;
+  left: 67%;
+}
+
+/* Window 4 */
+#window4 {
+  background-image: url('src/sky4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#window4 h1 {
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  position: absolute;
+}
+
+#window4 #skills {
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#window4 h3 {
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  line-height: 3.5;
+  text-align: center;
+  margin-left: 1.5%;
+  text-decoration: none;
+}
+
+#window4 .image1 {
+  top: 56%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 650px;
+  position: absolute;
+}
+
+#window4 .image2 {
+  top: 56%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 650px;
+  position: absolute;
+}
+
+/* Window 5 */
+#window5 {
+  background-image: url('src/sky5desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#window5 h1 {
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'SUITE-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  position: absolute;
+}
+
+.gmail {
+  top: 52%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  position: absolute;
+}
+
+.github {
+  top: 52%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  position: absolute;
+}
+
+.medium {
+  top: 52%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  position: absolute;
+}
+
+.velog {
+  top: 52%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  position: absolute;
+}
+
+#window1,
+#window2,
+#window3,
+#window4,
+#window5 {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

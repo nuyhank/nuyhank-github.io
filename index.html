@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>nariveshere.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 798px)" href="mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 799px)" href="desktop.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;600&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>    
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#window1">Intro</a></li>
+        <li><a href="#window2">About</a></li>
+        <li><a href="#window3">What I Love</a></li>
+        <li><a href="#window4">Skills</a></li>
+        <li><a href="#window5">Channels</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div id="window1" class="page-transition">
+        <div id="intro">
+          <h1>Hi, I'm Nahyun!</h1>
+        </div>
+      </div>
+
+      <div id="window2" class="page-transition">
+        <div id="about">
+          <h1>About</h1>
+        </div>
+        <div class="slide-container">
+          <div class="slide-album">
+            <div class="slide-images">
+              <img src="src/nahyun1.jpg">
+              <img src="src/nahyun2.jpg">
+              <img src="src/nahyun3.jpg">
+            </div>
+            <button class="btn-next">▶</button>
+            <button class="btn-prev">◀</button>
+          </div>
+        </div>
+        <div id = "profile">
+          <h2>Name: Kang Na Hyun (NARI)</h2>
+          <h2>Birth: 2002.07.25</h2>
+          <h2>Location: Seoul, Korea</h2>
+          <h2>Education:</h2>
+          <a href="https://www.skku.edu/skku/index.do" class="narrow-link">
+            <h3>SKKU</h3>
+          </a>          
+          <h4>-Business Administration&amp;Software</h4>
+          <a href="http://puilschool.hs.kr" class="narrow-link">
+            <h3>PFLHS</h3>
+          </a>
+          <h4>-ENG&amp;JPN, 24th Vice President</h4>
+        </div>
+        <div id = "activity">
+          <h2>Activity:</h2>
+          <a href="http://skku-skkrypto.github.io" class="narrow-link">
+            <h3>SKKRYPTO</h3>
+          </a>
+          <h4>-10th Research&amp;Dev Team</h4>
+          <h4>-10th Public Relations Team Leader</h4>
+          <h4>-11th Dev Team Leader</h4>
+          <a href="http://comit1028.github.io/comit" class="narrow-link">
+            <h3>CoMit</h3>
+          </a>
+          <h4>-Web Dev Team</h4>
+          <a href="https://www.instagram.com/skku_fashiongang" class="narrow-link">
+            <h3>FaGang</h3>
+          </a>
+          <h4>-2024 S/S</h4>
+        </div>
+      </div>
+
+      <div id="window3" class="page-transition">
+        <h1>What I Love</h1>
+        <div id="loves">
+          <h2>Developing</h2><br>
+          <h2>Fashion</h2><br>
+          <h2>Singing</h2><br>
+          <h2>Film</h2>
+        </div>
+        <img src = "src/clothes1.png" class="img1">
+        <img src = "src/clothes2.png" class="img2">
+        <img src = "src/clothes3.png" class="img3">
+        <img src = "src/clothes4.png" class="img4">
+        <img src = "src/clothes5.png" class="img5">
+        <img src = "src/clothes6.png" class="img6">
+      </div> 
+
+      <div id="window4" class="page-transition">
+        <h1>Skills</h1>
+        <div id ="skills">
+          <h3>Korean / English / Japanese</h3>
+          <h3>Solidity</h3>
+          <h3>Python</h3>
+          <h3>C</h3>
+          <h3>JAVA</h3>
+          <h3>GoLang</h3>
+          <h3>Front-end</h3>
+        </div>
+        <img src="src/bunny1.png" class="image1">
+        <img src="src/bunny2.png" class="image2">
+      </div>
+
+      
+      <div id="window5" class="page-transition">
+        <h1>Channels</h1>
+        <a href="mailto:nariveshere@gmail.com" class="narrow-link">
+          <img src="src/gmail.png" class="gmail">
+        </a>
+        <a href="https://github.com/nuyhank" class="narrow-link">
+          <img src="src/github.png" class="github">
+        </a>
+        <a href="https://medium.com/@nahyun1492" class="narrow-link">
+          <img src="src/medium.png" class="medium">
+        </a>
+        <a href="https://velog.io/@nahyun1492" class="narrow-link">
+          <img src="src/velog.png" class="velog">
+        </a>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    if (window.matchMedia("(max-width: 798px)").matches) {
+      var script = document.createElement('script');
+      script.src = 'mobile.js';
+      document.body.appendChild(script);
+    }
+  </script>
+
+  <script>
+    if (window.matchMedia("(min-width: 799px)").matches) {
+      var script = document.createElement('script');
+      script.src = 'desktop.js';
+      document.body.appendChild(script);
+    }
+  </script>
+
+</html>
